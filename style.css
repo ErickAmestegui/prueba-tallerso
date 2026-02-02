@@ -1,70 +1,65 @@
-/* Reset básico */
+/* Fuente pixel estilo Minecraft */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #c3ec52, #0ba360);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Contenedor */
-.container {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #6aa84f;
+    background-image: linear-gradient(#6aa84f 50%, #38761d 50%);
+    background-size: 40px 40px;
+    color: #ffffff;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* Header */
-header h1 {
-    font-size: 2.5em;
+.header {
+    background-color: #3c3c3c;
+    padding: 30px 20px;
+    border-bottom: 6px solid #1a1a1a;
+}
+
+.header h1 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+.header p {
+    font-size: 10px;
+    color: #b7b7b7;
 }
 
-/* Main */
-main p {
-    margin: 20px 0;
-    font-size: 1.2em;
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
 }
 
-.icon {
-    width: 80px;
-    margin-bottom: 20px;
+.card {
+    background-color: #8b5a2b;
+    border: 4px solid #3e2723;
+    padding: 20px;
+    box-shadow: inset -4px -4px 0 #5d4037;
 }
 
-button {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #ffbb33;
-    color: #333;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+.card h2 {
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-button:hover {
-    background-color: #ffdd66;
+.card p {
+    font-size: 10px;
+    line-height: 1.6;
 }
 
-/* Footer */
 footer {
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #eee;
+    background-color: #2e2e2e;
+    padding: 15px;
+    font-size: 8px;
+    border-top: 4px solid #1a1a1a;
 }
+
